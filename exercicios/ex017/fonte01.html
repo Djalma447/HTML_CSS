@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in [Polegadas], px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            /* Valores para certas fontes:
+            lighter, normal, bold, bolder
+            OU
+            De 100 até 900, mas a maioria das fontes não tem todas essas variações
+            100 -> Lighter
+            400 -> Normal
+            ...
+            800 -> Bolder*/
+            font-style: italic;
+            /* Normal, Italic */
+            text-decoration: underline;
+            /* Underline */
+        }
+
+        h1{
+            /* shorthand 
+            ORDEM PARA DECORAR
+            font-style -> font-weight -> font-size -> font-family
+
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: sans-serif;
+            */
+            font: italic bolder 3em sans-serif;
+
+            /* AVISO: Não existe shorthand pra tudo, mas existem vários shorthands que você pode utilizar para o seu código */
+        }
+
+        h2{
+            font: bold 1em arial;
+
+            /* AVISO: Podem ser omitidos alguns dados, mas a ordem ainda deve ser considerada. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quibusdam eveniet soluta! Dolor ullam, a exercitationem doloremque ut veniam eum nam illo maxime. Porro, natus officiis harum in cum quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nisi distinctio velit vel nam quis, dolore harum molestias aut possimus fugit, porro amet. Officia quia recusandae alias tempora optio harum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro harum corrupti ab cum voluptatem laudantium ullam amet sunt dignissimos quaerat quibusdam neque nihil itaque officia, non, repudiandae accusantium maiores ratione?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, doloremque soluta. Quis amet magnam reiciendis, tempora maiores dignissimos reprehenderit repudiandae voluptates, dolore qui nihil provident, alias illo animi saepe voluptas.</p>
+</body>
+</html>

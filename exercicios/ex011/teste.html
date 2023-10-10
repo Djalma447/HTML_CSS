@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Teste de Imagem dinâmica</h1>
+    <p>Testando uma imagens em várias resoluções na página de acordo com o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/yyhakusho-300-240.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/yyhakusho-500-400.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/yyhakusho-700-560.png" type="image/png">
+        <img src="imagens/yyhakusho-1000-800.png" alt="yuyu-hakusho-1000_800">
+    </picture>
+</body>
+</html>

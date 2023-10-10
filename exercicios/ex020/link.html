@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: #07ebeb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: #070beb;
+        }
+
+        a:hover{
+            color: #ff0000;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: #f9b8d5;
+        }
+
+        .special{
+            background-color: #0000ff;
+            color: #ff00aa;
+        }
+
+        .special:hover{
+            color: #ff8899;
+        }
+
+        .special:visited{
+            color: #d8a7e7;
+        }
+
+        .special:active{
+            color: yellow;
+        }
+
+        .special::after{
+            content: ' ↩';
+            font-weight: normal;
+        }
+
+        .special::before{
+            content: '↪ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/djalma447" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/@djr.djalma" target="_blank" class="special">Canal YouTube</a></li>
+        <li><a href="https://instagram.com/djr.djalma" target="_blank">Perfil Instagram</a></li>
+    </ul>
+</body>
+</html>
